@@ -1,4 +1,4 @@
-Accelerometer Arrow Sample
+Simple Accelerometer Sample
 =====
 
 This simple demo shows how an app might access the accelerometer of a native device using the JavaScript bridge library.
