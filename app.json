@@ -8,7 +8,7 @@
   "keywords":["intel.xdk API"],
   "visible" : "true",
   "highlights" : ["intel.xdk API"],
-  "apppreview":"false",
+  "apppreview":"true",
   "appname":"demo.accelerometersimple",
   "relname":"4.0.0"
 }
