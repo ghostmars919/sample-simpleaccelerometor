@@ -1,3 +1,5 @@
+/*jslint browser:true, devel:true, white:true, vars:true, eqeq:true */
+/*global intel:false*/
 
 /*
  * This function runs once the page is loaded, but the JavaScript bridge library is not yet active.
@@ -9,7 +11,7 @@ var init = function () {
 window.addEventListener("load", init, false);  
 
 // Prevent Default Scrolling  
-preventDefaultScroll = function(event) 
+var preventDefaultScroll = function(event) 
 {
     // Prevent scrolling on this element
     event.preventDefault();
@@ -48,7 +50,7 @@ function onsuccess(acceleration)
     var Acceleration_X = acceleration.x;
     var Acceleration_Y = acceleration.y;
     var arrow = document.getElementById("imagearrow");
-    var rotation_anglex = Math.round(Acceleration_X* 10) / 10
+    var rotation_anglex = Math.round(Acceleration_X* 10) / 10;
 
     if(Acceleration_Y<=0)
     {
@@ -63,7 +65,7 @@ function onsuccess(acceleration)
             arrow.style.transform = "rotate("+(180-(rotation_anglex*-100))+"deg)";
         }
     }
-};
+}
 
 //Options for watch accelaration
 var options = { frequency: 150, adjustForRotation: false }; 
